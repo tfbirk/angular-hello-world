@@ -1,0 +1,11 @@
+{
+  "name": "nvme-angular",
+  "version": "0.1.0",
+  "description": "NVMe mockup with AngularJS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Taylor Brown",
+  "license": "None"
+}

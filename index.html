@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="app">
+    <head>
+        <meta charset="UTF-8">
+        <title>Angular Test</title>
+        <script src="node_modules/angular/angular.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <!--Hello World-->
+        <div>
+            <h1 ng-controller="HelloWorldCtrl">{{message}}</h1>
+        </div>
+        
+        <!--Cost Calculator-->
+        <div ng-init="qty=1;cost=2">
+          <h3>Invoice:</h3>
+          <div class="ui input">
+            <label>Quantity:</label><input type="number" min="0" ng-model="qty">
+          </div></br>
+          <div class="ui input">
+            Costs: <input type="number" min="0" ng-model="cost">
+          </div>
+          <div>
+            <b>Total:</b> {{qty * cost | currency}}
+          </div>
+        </div>
+        
+    </body>
+</html>
