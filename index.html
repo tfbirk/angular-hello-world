@@ -13,7 +13,18 @@
             <h1 ng-controller="HelloWorldCtrl">{{message}}</h1>
         </div>
         
+        <!--Hello You-->
+        <br>
+        <div ng-init="name='you';">
+            <h2>Hello, {{name}}!</h2>
+            <div class="ui input">
+                <label>Tell me who to say hello to:</label>
+                <input type="string" ng-model="name">
+            </div>
+        </div>
+        
         <!--Cost Calculator-->
+        <br>
         <div ng-init="qty=1;cost=2">
           <h3>Invoice:</h3>
           <div class="ui input">
